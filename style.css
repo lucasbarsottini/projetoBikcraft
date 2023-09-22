@@ -1,16 +1,27 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 600px;
 }
 
-ul {
+h1,
+ul,
+p {
   margin: 0px;
+}
+ul {
   padding: 0px;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header-bg {
@@ -81,5 +92,108 @@ a {
   .header-menu a {
     padding: 8px 12px;
     font-size: 0.875rem;
+  }
+}
+
+.introducao-bg {
+  background: #000;
+  color: #fff;
+  box-shadow: inset 0 -120px #ffff;
+}
+
+.introducao {
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.introducao-conteudo {
+  align-self: center;
+  padding-bottom: 200px;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao h1 {
+  font-size: 4rem;
+  margin-bottom: 32px;
+  line-height: 1.125;
+}
+.introducao h1 span {
+  color: #ffbb00;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #b2b2b2;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+  color: #332200;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .introducao a {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .introducao p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .introducao-bg {
+    background-color: #111;
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffff;
   }
 }
