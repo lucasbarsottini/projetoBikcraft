@@ -1,3 +1,17 @@
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0px auto;
+}
+
+.container-menu {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin: 0px auto;
+}
+
 .btn {
   display: inline-block;
   padding: 16px 32px;

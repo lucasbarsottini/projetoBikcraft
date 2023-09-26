@@ -1,0 +1,18 @@
+.tecnologia-bg {
+  background: var(--cor-11);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.tecnologia-conteudo {
+  align-self: center;
+}
+
+.tecnologia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
