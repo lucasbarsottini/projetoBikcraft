@@ -34,9 +34,13 @@
   border-top: 2px solid var(--cor-2);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .parceiros {
     padding-bottom: 60px;
+  }
+
+  .parceiros li {
+    padding: 20px;
   }
   .parceiros h2 {
     margin-bottom: 20px;
