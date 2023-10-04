@@ -1,0 +1,57 @@
+.span p {
+  background: var(--cor-12);
+  border-radius: 4px;
+  gap: 8px;
+  padding: 3px 8px;
+}
+
+.span p {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid-span p:nth-child(1):before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../../img/icones/entrega.svg");
+}
+
+.grid-span p:nth-child(2):before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../../img/icones/estoque.svg");
+}
+
+.grid-botao {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.grid-botao {
+  grid-row: span 2;
+}
+
+.grid-span {
+  display: grid;
+  gap: 8px;
+}
+
+.p {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 460px) {
+  .grid-botao {
+    grid-template-columns: 1fr;
+  }
+}
