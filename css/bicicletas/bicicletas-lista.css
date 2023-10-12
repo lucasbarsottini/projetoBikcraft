@@ -28,7 +28,7 @@
   transition: 0.3s;
   width: 30px;
 }
-#nimbus .bicicletas-lista ul {
+#bicicleta .bicicletas-lista ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
