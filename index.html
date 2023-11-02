@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft">
-  <link rel="stylesheet" href="style.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,100&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="./style.css" as="style">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,7 +23,6 @@
       <a href="./">
         <img src="./img/bikcraft.svg" alt="logo">
       </a>
-
       <nav class="" aria-label="principal">
         <ul class="header-menu c0 font-1-m">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -38,9 +40,11 @@
         <p class="font-1-l c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft</p>
         <a class="btn" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <div class="introducao-imagem">
+
+      <picture>
+        <source media="(max-width: 850px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/fotos/introducao.jpg" alt="bicicleta-preta">
-      </div>
+      </picture>
 
     </div>
 
@@ -80,7 +84,7 @@
         <span class="font-2-l-b c5 span1">Tecnologia Avançada</span>
         <h2 class="font-1-xxl c0">Você escolhe as suas cores e componentes<span class="cp1">.</span></h2>
         <p class="font-2-l c5">Cada bikecraft é única e possui a sua identidade As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores</p>
-        <a class=" link" href="">Escolha um modelo</a>
+        <a class="link" href="./bicicletas.html">Escolha um modelo</a>
         <div class="tecnologia-grid">
 
           <div class="tecnologia-detalhes">
@@ -216,6 +220,7 @@
 
 
 
+  <script src="js/script.js"></script>
 
 </body>
 

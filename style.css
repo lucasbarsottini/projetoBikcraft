@@ -20,3 +20,11 @@
 @import "./css/contato/lojas.css";
 @import "./css/utilidades/formulario.css";
 @import "./css/orcamento/orcamento.css";
+
+.texto-slider {
+  display: none;
+}
+
+.ativar {
+  display: block;
+}
