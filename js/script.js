@@ -1,3 +1,6 @@
+const html = document.querySelector("html");
+html.classList.add("js");
+
 // Ativar Links menu
 const links = document.querySelectorAll(".header-menu a");
 
@@ -41,3 +44,27 @@ function mostrarRespostas(btn) {
 }
 
 botao.forEach(mostrarRespostas);
+
+// Galeria
+
+const cliqueGaleria = document.querySelectorAll(
+  "#bicicleta .bicicleta-imagens img"
+);
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+const galeriaPrincipal = document.querySelector("#principal1");
+
+function clique(src) {
+  const img = src.currentTarget;
+
+  galeriaContainer.prepend(img);
+}
+
+function alterarImg(event) {
+  event.addEventListener("click", clique);
+}
+
+cliqueGaleria.forEach(alterarImg);
+
+// Animação
+
+new SimpleAnime();
